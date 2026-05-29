@@ -1,4 +1,5 @@
 import resumePdf from '../assets/Nisha_Kakadiya_Resume.pdf'
+import { Link } from 'react-router-dom'
 import { profile } from '../data/resume'
 
 export default function Home() {
@@ -14,9 +15,9 @@ export default function Home() {
             <a className="primary-button" href={resumePdf} download>
               Download Resume
             </a>
-            <a className="secondary-button" href="/contact">
+            <Link className="secondary-button" to="/contact">
               Contact Me
-            </a>
+            </Link>
           </div>
         </div>
         <div className="hero-card">
