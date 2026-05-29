@@ -1,0 +1,88 @@
+:root {
+  --bg: #090b12;
+  --panel: rgba(15, 18, 31, 0.82);
+  --panel-strong: rgba(22, 27, 45, 0.96);
+  --text: #e5e7ff;
+  --muted: #9ca3c5;
+  --accent: #8b5cf6;
+  --accent-soft: rgba(139, 92, 246, 0.15);
+  --border: rgba(255, 255, 255, 0.08);
+  --shadow: 0 24px 90px rgba(0, 0, 0, 0.35);
+  --radius: 28px;
+  --font: Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: var(--font);
+  font-size: 16px;
+  line-height: 1.62;
+  color: var(--text);
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(139, 92, 246, 0.14),
+      transparent 28%
+    ),
+    radial-gradient(
+      circle at bottom right,
+      rgba(56, 189, 248, 0.12),
+      transparent 28%
+    ),
+    var(--bg);
+  min-height: 100vh;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+  font-family: var(--font);
+}
+
+button,
+a {
+  font: inherit;
+}
+
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  font-family: var(--font);
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+main {
+  width: min(1180px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 22px 0 40px;
+}
+
+@media (max-width: 900px) {
+  :root {
+    font-size: 15px;
+  }
+  main {
+    width: min(100%, calc(100% - 24px));
+    padding: 18px 0 28px;
+  }
+}
