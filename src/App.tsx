@@ -8,7 +8,7 @@ import './App.css'
 
 function App() {
   return (
-    <BrowserRouter basename='/nishakakadiya'>
+    <BrowserRouter basename='/nisha-portfolio'>
       <div className="app-shell">
         <div className="background-glow" />
         <NavBar />
